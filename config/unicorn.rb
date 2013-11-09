@@ -1,4 +1,4 @@
-@dir = "/sites/git_hook/"
+@dir = "/sites/git-hook-receive/"
 
 worker_processes 1
 working_directory "#{@dir}config"

@@ -5,7 +5,7 @@ class Hook < Sinatra::Base
 		commit = JSON.parse(request.body.read)
 		
 		# save to log
-		log = File.open("/sites/git_hook/commits.log","a")
+		log = File.open("/sites/git-hook-receive/commits.log","a")
 		log.write commit['user']
 		log.write "\n"
 		log.close
